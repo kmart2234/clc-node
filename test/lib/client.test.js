@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////
+// Prod Modules Required
+//
+const Client = require('../../client');
+
+
+////////////////////////////////////////////////////////////////////////////
+// Dev Modules Required
+//
+const
+    chai = require('chai'),
+    expect = require('chai').expect,
+    sinon = require('sinon'),
+    sinonChai = require('sinon-chai');
+
+chai.use(sinonChai);
+
+
+////////////////////////////////////////////////////////////////////////////
+// Mocks Inputs / Responses
+//
+let user = {
+    userName: 'user',
+    password: 'password'
+};
+
+
+////////////////////////////////////////////////////////////////////////////
+// Tests
+//
+describe('client.js Tests',() => {
+    it('should create a new Client');
+});
