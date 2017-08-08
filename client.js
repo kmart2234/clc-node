@@ -9,7 +9,7 @@ module.exports = Client;
 ////////////////////////////////////////////////////////////////////////////
 // Required Modules
 //
-const request = require('request');
+const req = require('request');
 const querystring = require('querystring');
 const authHandler = require('./lib/authHandler');
 
@@ -19,6 +19,17 @@ const authHandler = require('./lib/authHandler');
 //
 const apiBaseUrl = 'https://api.ctl.io/';
 let credsObj = null;
+
+const request = (options => {
+    return new Promise((resolve, reject) => {
+        req(options, function(err, res){
+            if(err) {
+                return reject(err);
+            }
+            return resolve(res);
+        })
+    });
+});
 
 const myBody = (body) => {
     if(typeof body !== 'object'){
