@@ -1,6 +1,6 @@
 {
   "name": "clc-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLC API Wrapper",
   "main": "./client",
   "scripts": {
@@ -16,9 +16,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "memory-cache": "^0.1.6",
-    "promise-retry": "^1.1.1",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "chai": "4.0.0",
